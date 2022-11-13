@@ -4,12 +4,10 @@ public String reverseWords(String s) {
         for(int i=str.length-1;i>=0;i--){
             if(str[i].equals(" ")){
                 str[i]="";
+                continue;
             }
             else
                 str[i] = str[i].trim();
-            if(str[i].isEmpty()){
-                continue;
-            }
             st.append(str[i]);
             st.append(" ");
         }
